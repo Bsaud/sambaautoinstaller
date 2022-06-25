@@ -4,7 +4,7 @@ echo admin | sudo apt update
 sudo apt -y install samba
 sudo systemctl start smbd
 sudo \cp -r ~/sambaautoinstaller/s /etc/samba/smb.conf
-sudo \cp -r ~/sambaautoinstaller/x /etc/smbshared.conf
+sudo \cp ~/sambaautoinstaller/x /etc/smbshared.conf
 sudo groupadd smbgroup
 sudo useradd -g smbgroup smbuser
 sudo mkdir /share /share/Documents /share/Public
