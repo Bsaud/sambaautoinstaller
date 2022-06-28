@@ -1,16 +1,20 @@
-[Documents]
+[sharedDocuments]
 
-path = /share/Documents
-force user = smbuser
-force group = smbgroup
+path = /fileserver/sharedDocuments
+force user = fileshare
+force group = fileshareuser
+create mask = 0664
+force create mode = 0664
+directory mask = 0777
+force directory mode = 0777
 public = yes
-writable = no
+writable = yes
 
-[Public]
+[sharedMedia]
 
-path = /share/Public
-force user = smbuser
-force group = smbgroup
+path = /fileserver/sharedMedia
+force user = fileshare
+force group = fileshareuser
 create mask = 0664
 force create mode = 0664
 directory mask = 0777
